@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head>
+    
+<title>Login Window</title>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charsrt="utf8">
+
+<style>
+.outline{
+color: #4CAF50;
+background-color: white;
+border: 2px solid #4CAF50;
+font-size: 22px;
+text-align: center;
+padding: 18px 20px;
+cursor: pointer;
+transition: all 0.3s ease;
+border-radius: 10px;
+}
+    
+.outline:hover{
+background-color: #4CAF50;
+color: white;
+}    
+        
+form{
+font-size: 20px;  
+width: 100%;
+color: white;
+display: none;
+} 
+
+legend{
+font-size: 26px;
+font-family: sans-serif;
+color: black;
+}
+
+fieldset{
+background-color: #4CAF50;  
+height: 400px;
+border: 2px solid #ccc;
+}
+    
+input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;  
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+} 
+    
+input[type=submit], input[type=reset] {
+padding:5px 8px; 
+cursor: pointer;
+}
+    
+</style>
+    
+</head>
+    
+<body>
+<button class="outline" onclick="openform()">Login</button>   
+    
+<form class="fm" action="#" target="post">
+<pre><fieldset>
+<legend>Login</legend>
+User Name          
+<input type="text" name="username" value="Akash Sharma">
+Password
+<input type="password" name="password" value="....">
+
+
+         <input type="submit" value="Submit">  <input type="reset" value="Reset"><br>
+<input type="checkbox" name="rememberme" checked>Remember Me 
+
+</fieldset></pre></form>  
+    
+<script>
+function openform(){
+document.getElementsByClassName("outline")[0].style.display = "none";
+document.getElementsByClassName("fm")[0].style.display = "block";
+}    
+</script>
+    
+</body>
+    
+</html>
